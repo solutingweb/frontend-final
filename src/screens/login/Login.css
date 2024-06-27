@@ -1,0 +1,69 @@
+/* Estilos para el contenedor principal */
+div {
+    width: 100%; /* Ancho del contenedor */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px; /* Espaciado interno del contenedor */
+    border: 1px solid #ccc; /* Borde del contenedor */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: #f9f9f9; /* Color de fondo del contenedor */
+}
+
+/* Estilos para los elementos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px; /* Espaciado inferior del label */
+}
+
+input {
+    padding: 8px; /* Espaciado interno del input */
+    margin-bottom: 10px; /* Espaciado inferior del input */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 3px; /* Borde redondeado */
+}
+
+button {
+    padding: 10px 15px; /* Espaciado interno del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quitar borde del botón */
+    border-radius: 3px; /* Borde redondeado */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cambiar color de fondo al pasar sobre el botón */
+}
+
+/* Estilos para el mensaje de error */
+span.error {
+    color: red; /* Color del texto de error */
+    margin-bottom: 10px; /* Espaciado inferior del mensaje de error */
+}
+
+/* Estilos para el enlace de registro */
+span.register-link {
+    margin-top: 10px; /* Espaciado superior del enlace de registro */
+}
+
+/* Estilos específicos para el enlace */
+span.register-link a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+span.register-link a:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar sobre él */
+}
+
+/* Estilos para hacer el formulario responsive */
+@media screen and (max-width: 500px) {
+    div {
+        width: 90%; /* Reducir el ancho del contenedor en pantallas pequeñas */
+    }
+}
